@@ -1,11 +1,7 @@
-# Code Examples For YouTube and abdisalan.com
+## How to run
 
----
-
-- [ReasonML Form Events](/form-events)
-- [Why I dont't Use OFFSET](/sql-offset)
-- [Simple HTTP Video Streaming](/http-video-stream)
-- [MongoDB HTTP Video Streaming](/mongo-http-video)
-- [LIVE Video Streaming Part 1](/live-stream-part-1)
-- [LIVE Video Streaming Part 2](/live-stream-part-2)
-- [LIVE Video Streaming Part 3](/live-stream-part-3)
+1. Install Docker
+2. `docker-compose build`
+3. `docker-compose up`
+4. Open OBS and in settings set the server to `rtmp://localhost:1935/live` and the stream key to `test?key=supersecret`
+5. Open a browser and go to `http://localhost:3000` to view your live stream!
